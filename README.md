@@ -63,9 +63,16 @@ Usually, in nextJs we create components inside the src folder. In the source fol
 
 <img src="https://imagizer.imageshack.com/img922/3470/W9Am4F.png"></img>
 
-<b>:Import the component in the layout.js :D</b>
+<b>:Import the component inside the layout.js :D</b>
 
 <img src="https://imagizer.imageshack.com/img924/1007/HzWQiy.png"></img>
+
+## Active Routes/Server Component/Client Component
+ In Next.js, all components are server components by default, which means they do not allow the use of hooks inside them. To enable the use of hooks within components, we need to add "use client" at the top of the component. 
+ 
+ <img src="https://imagizer.imageshack.com/img924/2025/pa8ztB.png"></img> 
+
+
 
 - [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
 - [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
