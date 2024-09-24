@@ -1,6 +1,7 @@
 import localFont from "next/font/local";
 import "./globals.css";
 import Link from "next/link";
+import Navbar from "@/components/Navbar";
 
 
 
@@ -15,16 +16,8 @@ export default function RootLayout({ children }) {
       <body
         className={`antialiased h-screen`}
       >
-        <nav className="bg-red-500 text-white">
-          <ul>
-            <li><Link href="/">Home</Link></li>
-            <li><Link href="/services">Services</Link></li>
-            <li><Link href="/about">About</Link></li>
-            <li><Link href="/contact">Contact</Link></li>
-          </ul>
-        </nav>
+        <Navbar></Navbar>
         {children}
-        
         <footer>
           This is footer
         </footer>

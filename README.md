@@ -56,9 +56,16 @@ When a folder is added within the src/app directory, it automatically becomes a 
 
 <img src="https://imagizer.imageshack.com/img924/7531/7oaPh3.png"></img>
 
+
+
+## Create links, components
+Usually, in nextJs we create components inside the src folder. In the source folder we create a folder named components and inside it we create the components (Navbar.jsx/Banner.jsx/Newsletter.jsx etc.). And to create nav links next Js provides us built-in <Link/> component.
+
+<img src="https://imagizer.imageshack.com/img922/3470/W9Am4F.png"></img>
+
+:Import the component in the layout.js :D
+
+<img src="https://imagizer.imageshack.com/img924/1007/HzWQiy.png"></img>
+
 - [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
 - [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-
-## Deploy on Vercel
-
