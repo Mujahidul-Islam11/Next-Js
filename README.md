@@ -124,10 +124,11 @@ const Navbar = () => {
       path: "/contact",
     },
     {
-      title: "dashboard",
-      path: "/dashboard",
+      title: "categories",
+      path: "/categories",
     },
-  ];
+];
+
   if (pathName.includes("dashboard")) {
     return (
       <div className="p-4 bg-green-400 text-white">Welcome to Dashboard</div>
@@ -158,7 +159,9 @@ const Navbar = () => {
 export default Navbar;
 
 ```
- 
+
+### nested routing/catch all segment
+ To create multiple routes within a route have to use [...features] this kind of name.
 
 - [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
 - [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.

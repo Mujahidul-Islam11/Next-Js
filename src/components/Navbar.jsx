@@ -28,8 +28,8 @@ const Navbar = () => {
       path: "/contact",
     },
     {
-      title: "dashboard",
-      path: "/dashboard",
+      title: "Categories",
+      path: "/categories",
     },
   ];
   if (pathName.includes("dashboard")) {
