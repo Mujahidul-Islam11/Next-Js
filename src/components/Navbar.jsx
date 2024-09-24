@@ -23,11 +23,17 @@ const Navbar = () => {
       title: "Contact",
       path: "/contact",
     },
+    {
+      title: "Blogs",
+      path: "/blogs",
+    },
   ];
+  
   return (
     <div>
-      <nav className="bg-red-500 text-white">
-        <ul>
+      <nav className="bg-red-500 text-white flex justify-between py-4 px-4 text-xl">
+        <h3>Next Hero</h3>
+        <ul className="flex gap-5">
           {links?.map((link) => (
             <li key={link.path}>
               <Link
@@ -39,6 +45,7 @@ const Navbar = () => {
             </li>
           ))}
         </ul>
+        <button>Login</button>
       </nav>
     </div>
   );

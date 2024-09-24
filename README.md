@@ -69,10 +69,13 @@ Usually, in nextJs we create components inside the src folder. In the source fol
 
 ## Active Routes/Server Component/Client Component
  In Next.js, all components are server components by default, which means they do not allow the use of hooks inside them. To enable the use of hooks within components, we need to add "use client" at the top of the component. 
- 
+
  <img src="https://imagizer.imageshack.com/img924/2025/pa8ztB.png"></img> 
 
-
+## Nested routing
+ When a folder is added within the src/app directory, it automatically becomes a route. For instance, by creating a folder named "about," it will be accessible at the "/about" route. Additionally, any .jsx document added inside the "about" folder will be rendered at the "/about" path (the document name must be page.jsx). And if we create more folders inside the "about" folder, such as "history" and "mission," they will become nested routes, leading to paths such as "/about/history" and "/about/mission" respectively. This supports the creation of a structured and organized routing system within the application.  
+ 
+ <img src="https://imagizer.imageshack.com/img923/7202/FjVC8J.png"></img>
 
 - [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
 - [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
