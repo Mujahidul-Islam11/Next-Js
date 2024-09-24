@@ -18,9 +18,9 @@ NextJs
 | Feature                    | React                          | Next.js                        |
 |----------------------------|--------------------------------|--------------------------------|
 | Type                       | A JavaScript Library           |React framework built on top of  React Library|
-| Routing                    | Using React-router-dom          | Built-in App or Page router        |
-| SSR                        | Requires additional work        | Built-in SSR                  |
-| SEO Friendly               | Requires extra work for SEO     | SEO Friend during rendering      |
+| Routing                    | Using React-router-dom         | Built-in App or Page router    |
+| SSR                        | Requires additional work       | Built-in SSR                   |
+| SEO Friendly               | Requires extra work for SEO    | SEO Friend during rendering    |
 
 ## Installation
 
@@ -162,6 +162,11 @@ export default Navbar;
 
 ### nested routing/catch all segment
  To create multiple routes within a route have to use [...features] this kind of name.
+## Create error/loading page
+Create jsx document within the app folder (loading.jsx, error.jsx), they will automatically create error and loading pages.
+
+<img src="https://imagizer.imageshack.com/img924/3572/ca4yaC.png"/>
+
 
 - [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
 - [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
