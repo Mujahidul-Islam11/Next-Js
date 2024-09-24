@@ -2,6 +2,7 @@ import localFont from "next/font/local";
 import "./globals.css";
 import Link from "next/link";
 import Navbar from "@/components/Navbar";
+import Footer from "@/components/Footer";
 
 
 
@@ -18,9 +19,7 @@ export default function RootLayout({ children }) {
       >
         <Navbar></Navbar>
         {children}
-        <footer>
-          This is footer
-        </footer>
+        <Footer/>
       </body>
     </html>
   );

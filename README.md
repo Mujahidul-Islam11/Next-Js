@@ -63,7 +63,7 @@ Usually, in nextJs we create components inside the src folder. In the source fol
 
 <img src="https://imagizer.imageshack.com/img922/3470/W9Am4F.png"></img>
 
-:Import the component in the layout.js :D
+<b>:Import the component in the layout.js :D</b>
 
 <img src="https://imagizer.imageshack.com/img924/1007/HzWQiy.png"></img>
 
