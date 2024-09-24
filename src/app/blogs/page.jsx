@@ -5,8 +5,8 @@ const BlogsPage = () => {
   const blogs = [
     {
       id: 1,
-      title: "The Future of Web Development",
-      desc: "Exploring the latest trends and technologies shaping the future of web development, including frameworks, libraries, and best practices.",
+      title: "কথাতে ভুল হলে | Abu ubayda | lyrics",
+      desc: "কথাতে ভুল হলে নিরবে যেও ভুলে, খোপার চুল খুলে এসো সেদিন। আবারো ভালোবেসো পরানো খুলে হেসো, সরমে ঘরে সুখ যেকোনো দিন। স্মরণে আসে যদি ভালোবাসার নদি, তোমাতে নিরবধির হব বিলিন।(২) কথাতে ভুল হলে নিরবে যেও ভুলে, খোপার চুল খুলে এসো সেদিন। আবারো ভালোবেসো পরানো খুলে হেসো, সরমে ঘরে সুখ যেকোনো দিন। রদেলা দুপুরে খেয়ালি নুপুরে, হেয়ালি টুপুরে পাসে রবো। ঝরা পাতার গানে, করা ধোয়ার গ্রানে, ভরা জোয়ার গাঙ্গে, ভেসে যাব। রদেলা দুপুরে খেয়ালি নুপুরে, হেয়ালি টুপুরে পাসে রবো। ঝরা পাতার গানে, করা ধোয়ার গ্রানে, ভরা জোয়ার গাঙ্গে, ভেসে যাব। পরসে রেখো পাশে, ভরসে থেকো মিশে, হরশে ",
     },
     {
       id: 2,
@@ -33,8 +33,9 @@ const BlogsPage = () => {
   return (
     <div className="flex justify-center p-4 gap-4 flex-wrap">
       {blogs?.map((blog) => (
-        <div className="p-4 border w-60">
-          <h3>{blog?.title}</h3>
+        <div className="p-4 border w-72">
+          <h3 className="font-bold text-lg">{blog?.title}</h3>
+          <br />
           <h3>{blog?.desc}</h3>
           <Link href={`/blogs/${blog.id}`}>
             <button className="bg-red-500 px-3 py-2 text-white">

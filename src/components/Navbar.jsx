@@ -20,15 +20,23 @@ const Navbar = () => {
       path: "/about",
     },
     {
+      title: "Blogs",
+      path: "/blogs",
+    },
+    {
       title: "Contact",
       path: "/contact",
     },
     {
-      title: "Blogs",
-      path: "/blogs",
+      title: "dashboard",
+      path: "/dashboard",
     },
   ];
-  
+  if (pathName.includes("dashboard")) {
+    return (
+      <div className="p-4 bg-green-400 text-white">Welcome to Dashboard</div>
+    );
+  }
   return (
     <div>
       <nav className="bg-red-500 text-white flex justify-between py-4 px-4 text-xl">

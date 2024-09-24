@@ -86,10 +86,78 @@ We have a blogs page and have 5 blogs inside the blog page, we wanna see each bl
  <img src="https://imagizer.imageshack.com/img922/1576/uzuHEk.png"></img>
  
 
-<b> How to create a dynamic component?</b>
+<b>How to create a dynamic component?</b>
+<img src="https://imagizer.imageshack.com/img923/9136/92Rlxo.png"></img>
+<br>
 
- <img src="https://imagizer.imageshack.com/img923/9136/92Rlxo.png"></img>
+If we ever want to create a folder within the app folder which would not be converted to a route. In that case we have to wrap the folder name within a first braces. For example: (dashboardItems)
 
+## Conditional layout
+```bash
+"use client";
+import Link from "next/link";
+import { usePathname } from "next/navigation";
+import React from "react";
+
+const Navbar = () => {
+  const pathName = usePathname();
+
+  const links = [
+    {
+      title: "Home",
+      path: "/",
+    },
+    {
+      title: "Services",
+      path: "/services",
+    },
+    {
+      title: "About",
+      path: "/about",
+    },
+    {
+      title: "Blogs",
+      path: "/blogs",
+    },
+    {
+      title: "Contact",
+      path: "/contact",
+    },
+    {
+      title: "dashboard",
+      path: "/dashboard",
+    },
+  ];
+  if (pathName.includes("dashboard")) {
+    return (
+      <div className="p-4 bg-green-400 text-white">Welcome to Dashboard</div>
+    );
+  }
+  return (
+    <div>
+      <nav className="bg-red-500 text-white flex justify-between py-4 px-4 text-xl">
+        <h3>Next Hero</h3>
+        <ul className="flex gap-5">
+          {links?.map((link) => (
+            <li key={link.path}>
+              <Link
+                className={`${pathName === link.path && "text-yellow-400"}`}
+                href={link.path}
+              >
+                {link.title}
+              </Link>
+            </li>
+          ))}
+        </ul>
+        <button>Login</button>
+      </nav>
+    </div>
+  );
+};
+
+export default Navbar;
+
+```
  
 
 - [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
