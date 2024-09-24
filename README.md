@@ -37,25 +37,28 @@ Would you like to use App Router? (recommended) No / Yes
 Would you like to use Turbopack for `next dev`?  No / Yes
 Would you like to customize the import alias (`@/*` by default)? No / Yes
 What import alias would you like configured? @/*
+
+npm run dev
 ``` 
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+## Folder structure
+### page.js
+page.js is the root home page of next application
 
-## Learn More
+### layout.js
+layout.js contains the html body structure, and it also has the feature to change meta data
 
-To learn more about Next.js, take a look at the following resources:
+## Create routes
+When a folder is added within the src/app directory, it automatically becomes a route. For instance, by creating a folder named "about," it will be accessible at the "/about" route. Additionally, any .jsx document added inside the "about" folder will be rendered at the "/about" path (the document name must be page.jsx).
+
+<img src="https://imagizer.imageshack.com/img924/7531/7oaPh3.png"></img>
 
 - [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
 - [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
 
 ## Deploy on Vercel
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
