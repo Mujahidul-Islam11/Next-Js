@@ -79,14 +79,14 @@ Usually, in nextJs we create components inside the src folder. In the source fol
 
 ## Dynamic routing
 We have a blogs page and have 5 blogs inside the blog page, we wanna see each blogs detail. Now, how we gonna set dynamic navigation?
- 
- <img src="https://imagizer.imageshack.com/img922/1576/uzuHEk.png"></img>
+ <img src="https://imagizer.imageshack.com/img924/8374/anJfli.png"></img>
 
  To create a dynamic route inside the "blogs" folder, we need to create a folder with the structure "[id]". The folder name should match the JSON key, such as "[slug]", to enable dynamic routing based on the provided JSON data. For example, if the blog contains a "slug" parameter in the JSON, we would create a folder named "[slug]" inside the "blogs" directory to support dynamic routing based on the blog's "slug" parameter.
  
- <img src="https://imagizer.imageshack.com/img924/8374/anJfli.png"></img>
+ <img src="https://imagizer.imageshack.com/img922/1576/uzuHEk.png"></img>
+ 
 
- How to create a dynamic component?
+<b> How to create a dynamic component?</b>
 
  <img src="https://imagizer.imageshack.com/img923/9136/92Rlxo.png"></img>
 
