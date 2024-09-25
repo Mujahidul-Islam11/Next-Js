@@ -12,10 +12,6 @@ const Navbar = () => {
       path: "/",
     },
     {
-      title: "Services",
-      path: "/services",
-    },
-    {
       title: "About",
       path: "/about",
     },
@@ -24,12 +20,12 @@ const Navbar = () => {
       path: "/blogs",
     },
     {
-      title: "Contact",
-      path: "/contact",
+      title: "Posts",
+      path: "/posts",
     },
     {
-      title: "Categories",
-      path: "/categories",
+      title: "Meals",
+      path: "/meals",
     },
   ];
   if (pathName.includes("dashboard")) {
