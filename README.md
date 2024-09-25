@@ -190,9 +190,12 @@ Rendering is the process of transforming code into the visual and interactive we
 There are two types of rendering 
 - Client Side Rendering(CSR) - Web page is rendered by the user's browser instead of server
 - Pre-Rendering - Process of generating a website's contents or parts before a user requests them.
+  - Server Side Redering(SSR) - Web server generates the complete HTML for a page each time user requests it.
+  - Static Side Generation(SSG) - Websites HTML pages are pre-build at build time, before deployed to a server.
 
 
-
+---
+<br>
 
 - [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
 - [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
