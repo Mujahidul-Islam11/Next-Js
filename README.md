@@ -188,6 +188,9 @@ export const config = {
 Rendering is the process of transforming code into the visual and interactive web pages that users see and interact with on their browsers.
 
 There are two types of rendering 
+- Client Side Rendering(CSR) - Web page is rendered by the user's browser instead of server
+- Pre-Rendering - Process of generating a website's contents or parts before a user requests them.
+
 
 
 
