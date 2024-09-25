@@ -167,6 +167,29 @@ Create jsx document within the app folder (loading.jsx, error.jsx), they will au
 
 <img src="https://imagizer.imageshack.com/img924/3572/ca4yaC.png"/>
 
+## Middlewares 
+In Next.js, middleware refers to functions that have access to the request and response objects, and are able to modify or terminate the request-response cycle. Middleware can be used to perform tasks such as authentication, logging, error handling, and more. In the context of Next.js, middleware is often used to customize the behavior of API routes and provide additional functionality to the server-side code.
+
+```bash
+// middleware.js
+
+import { NextResponse } from "next/server"
+
+export const middleware = (request) =>{
+    return NextResponse.redirect(new URL("/contact", request.url))
+}
+
+export const config = {
+    matcher: "/user-profile"
+}
+```
+
+## Rendering
+Rendering is the process of transforming code into the visual and interactive web pages that users see and interact with on their browsers.
+
+There are two types of rendering 
+
+
 
 - [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
 - [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
