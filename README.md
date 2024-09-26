@@ -241,7 +241,7 @@ import styles from './styles.module.css'
 const AboutPage = () => {
     return (
         <div>
-            <h3 className={styles.text_large}>This is about page</h3> // Can not use -, instead of that have to use camel case or _
+            <h3 className={styles.text_large}>This is about page</h3> {/* Can not use - instead of that have to use camel case or _*/}
             <Link href={"/about/history"}>History</Link>
             <Link href={"/about/mission"}>Mission</Link>
         </div>
@@ -249,6 +249,17 @@ const AboutPage = () => {
 };
 
 export default AboutPage;
+```
+
+## MetaData 
+Add metadata anywhere you want 
+
+```bash 
+export const metadata = {
+  title: "Posts page - next hero",
+  description: "Check out the next posts",
+};
+
 ```
 
 - [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.

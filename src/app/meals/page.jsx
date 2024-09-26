@@ -1,5 +1,10 @@
 import Meals from '@/components/Meals';
 
+export const metadata = {
+    title: "Meal page - next hero",
+    description: "Find out your favorite meal",
+  };
+
 const MealsPage = () => {
     
     return (

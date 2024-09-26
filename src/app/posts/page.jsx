@@ -2,6 +2,11 @@ import { getPostsData } from "@/services/getPosts";
 import Link from "next/link";
 import React from "react";
 
+export const metadata = {
+  title: "Posts page - next hero",
+  description: "Check out the next posts",
+};
+
 const PostPage = async () => {
   const postsData = await getPostsData();
 
