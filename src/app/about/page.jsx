@@ -3,8 +3,9 @@ import React from "react";
 import styles from "./styles.module.css";
 
 export const metadata = {
-  title: "About page - next hero",
+  title: "About",
   description: "Learn more about us",
+  keywords: ['about page', 'about']
 };
 
 const AboutPage = () => {

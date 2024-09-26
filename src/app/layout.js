@@ -7,7 +7,10 @@ import Footer from "@/components/Footer";
 
 
 export const metadata = {
-  title: "Next Hero",
+  title: {
+    default: "Next Hero",
+    template: "%s | Next Hero"
+  },
   description: "Welcome to be a Next Hero",
 };
 

@@ -256,10 +256,12 @@ Add metadata anywhere you want
 
 ```bash 
 export const metadata = {
-  title: "Posts page - next hero",
+  title: {                           
+    default: "Next Hero",               // default title for all pages
+    template: "%s | Next Hero"          // if route changes then title would be added %s in this sign
+  },
   description: "Check out the next posts",
 };
-
 ```
 
 - [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
