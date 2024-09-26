@@ -257,8 +257,8 @@ Add metadata anywhere you want
 ```bash 
 export const metadata = {
   title: {                           
-    default: "Next Hero",               // default title for all pages
-    template: "%s | Next Hero"          // if route changes then title would be added %s in this sign
+    default: "Next Hero",           // default title for all pages
+    template: "%s | Next Hero"      // if route changes then title would be added %s in this sign
   },
   description: "Check out the next posts",
 };
