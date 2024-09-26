@@ -229,6 +229,27 @@ const data = await postDetails(params.id);
 
 export default page;
 ```
+## Next CSS/CSS Modules
+if we like! want to add separate styling for a specific page, then we have to create documents like this (styles.modules.css) inside the folder where we want the styling 
+
+```bash
+// about.jsx
+import Link from 'next/link';
+import React from 'react';
+import styles from './styles.module.css'
+
+const AboutPage = () => {
+    return (
+        <div>
+            <h3 className={styles.text_large}>This is about page</h3> // Can not use -, instead of that have to use camel case or _
+            <Link href={"/about/history"}>History</Link>
+            <Link href={"/about/mission"}>Mission</Link>
+        </div>
+    );
+};
+
+export default AboutPage;
+```
 
 - [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
 - [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
